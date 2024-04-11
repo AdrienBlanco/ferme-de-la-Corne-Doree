@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./ContactForm.scss"
+import "./ContactForm.scss";
 
 export default function ContactForm() {
     const captchas = [
@@ -33,15 +33,19 @@ export default function ContactForm() {
     }
 
     return (
-        <React.Fragment>
-            <h2>Contact</h2>
+        <div className="contact">
+            <h2 className="contact__title">Contact</h2>
             <form method="POST" className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__form__inputs">
                     <div className="contact__form__inputs--wrapper">
-                        <label htmlFor="prenom">Prénom</label>
-                        <input type="text" name="prenom" id="prenom" value={formData.prenom} onChange={handleChange} required />
-                        <label htmlFor="nom">Nom</label>
-                        <input type="text" name="nom" id="nom" value={formData.nom} onChange={handleChange} required />
+                        <div>
+                            <label htmlFor="prenom">Prénom</label>
+                            <input type="text" name="prenom" id="prenom" value={formData.prenom} onChange={handleChange} required />
+                        </div>
+                        <div>
+                            <label htmlFor="nom">Nom</label>
+                            <input type="text" name="nom" id="nom" value={formData.nom} onChange={handleChange} required />
+                        </div>
                     </div>
                     <div className="contact__form__inputs--wrapper">
                         <label htmlFor="email">Email</label>
@@ -66,8 +70,8 @@ export default function ContactForm() {
                 </div>
                 {errorMessage && <p className="error">{errorMessage}</p>}
                 {isSubmitted && <p>Merci pour votre message !</p>}
-                <button type="submit">Envoyer</button>
+                <button type="submit" className="contact__form__btn">Envoyer</button>
             </form>
-        </React.Fragment>
+        </div>
     );
 }
