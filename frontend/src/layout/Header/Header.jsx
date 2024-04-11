@@ -18,7 +18,7 @@ export default function Header() {
     return (
         <header>
             <nav>
-                <ul className="nav__list nav--left">
+                <ul className="nav__list">
                     {leftNav.map((item, index) => (
                         <NavBar
                             key={index}
@@ -35,7 +35,7 @@ export default function Header() {
                     />
                     <h1 className="sr-only logo__main-title">Ferme de la Corne Dorée</h1>
                 </div>
-                <ul className="nav__list nav--right">
+                <ul className="nav__list">
                     {rightNav.map((item, index) => (
                         <NavBar
                             key={index}
