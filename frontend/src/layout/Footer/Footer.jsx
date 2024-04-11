@@ -1,5 +1,9 @@
+import ContactForm from "../../components/ContactForm/ContactForm"
+
 export default function Footer() {
     return (
-        <p>test footer</p>
+        <footer className="footer">
+            <ContactForm />
+        </footer>
     )
 };
