@@ -3,7 +3,7 @@ import "./Home.scss"
 export default function Home() {
     return (
         <main className="hometest">
-            <p>test home</p>
+            <h2>test home</h2>
         </main>
     )
 };
