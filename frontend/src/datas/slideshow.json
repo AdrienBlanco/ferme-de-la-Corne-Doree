@@ -1,8 +1,8 @@
 {
     "homeSlideshow": [
-        { "title": "t1", "src": "/", "alt": "description" },
-        { "title": "t2", "src": "/", "alt": "description" },
-        { "title": "t3", "src": "/", "alt": "description" }
+        { "title": "t1", "src": "./img/slide1.png", "alt": "description de la photo1" },
+        { "title": "t2", "src": "./img/slide2.png", "alt": "description de la photo2" },
+        { "title": "t3", "src": "./img/slide3.png", "alt": "description de la photo3" }
     ],
     
     "goatSlideshow": [
@@ -10,7 +10,7 @@
         { "title": "t2", "src": "/", "alt": "description" },
         { "title": "t3", "src": "/", "alt": "description" }
     ],
-    
+
     "horseSlideshow": [
         { "title": "t1", "src": "/", "alt": "description" },
         { "title": "t2", "src": "/", "alt": "description" },

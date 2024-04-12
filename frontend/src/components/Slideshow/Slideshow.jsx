@@ -5,11 +5,11 @@ export default function Slideshow({ array }) {
   const [index, setIndex] = useState(0);
 
   const nextCard = () => {
-    setIndex(index < { array }.length - 1 ? index + 1 : 0);
+    setIndex(index < array.length - 1 ? index + 1 : 0);
   };
 
   const prevCard = () => {
-    setIndex(index === 0 ? { array }.length - 1 : index - 1 );
+    setIndex(index === 0 ? array.length - 1 : index - 1);
   };
 
   useEffect(() => {
@@ -23,26 +23,26 @@ export default function Slideshow({ array }) {
 
   return (
     <div className="SlideCardList">
-      <div className="SlideCardList__click--left" onClick={() => prevCard()}></div>
-      <div className="SlideCardList__click--right" onClick={() => nextCard()}></div>
-      {{ array }.map((item, idx) => (
+      <div className="SlideCardList__click SlideCardList__click--left" onClick={() => prevCard()}></div>
+      <div className="SlideCardList__click SlideCardList__click--right" onClick={() => nextCard()}></div>
+      {array.map((item, idx) => (
         <div
-          key={item.title}
+          key={idx}
           className={`SlideCard SlideCard--${index === idx ? "display" : "hide"
             }`}
         >
           <img src={item.src} alt={item.alt} />
         </div>
-      ))} 
+      ))}
       <div className="SlideCard__paginationContainer">
         <div className="SlideCard__pagination">
-          {{ array }.map((item, radioIdx) => (
+          {array.map((item, radioIdx) => (
             <input
-              key={item.title} 
+              key={radioIdx}
               type="radio"
               name="radio-button"
-              checked={radioIdx === index} 
-              onChange={() => setIndex(radioIdx)} 
+              checked={radioIdx === index}
+              onChange={() => setIndex(radioIdx)}
             />
           ))}
         </div>

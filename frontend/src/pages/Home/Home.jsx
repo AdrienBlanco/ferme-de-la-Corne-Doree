@@ -1,11 +1,19 @@
 import Presentation from "../../components/Presentation/Presentation";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import "./Home.scss"
+import homeSlideshow from "../../datas/slideshow.json";
 
 export default function Home() {
 
+    const slideshow = homeSlideshow.homeSlideshow;
+
     return (
-        <main className="hometest">
+        <main className="home">
+
+            <Slideshow
+                array={slideshow}
+            />
+
             <Presentation
                 sectionClass="presentation"
                 title="Presentation"
