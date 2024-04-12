@@ -33,7 +33,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div className="contact">
+        <div className="contact" id="Contact">
             <h2 className="contact__title">Contact</h2>
             <form method="POST" className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__form__inputs">
