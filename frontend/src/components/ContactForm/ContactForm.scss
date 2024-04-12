@@ -1,5 +1,4 @@
 .contact {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,17 +31,26 @@
                 }
 
                 input {
+                    display: flex;
+                    align-items: center;
                     padding: 5px;
                     width: 97%;
+                    font-family: 'Manjari';
                 }
 
                 select {
+                    display: flex;
+                    align-items: center;
                     padding: 5px;
+                    font-family: 'Manjari';
                 }
 
                 textarea {
+                    display: flex;
+                    align-items: center;
                     padding: 5px;
                     height: 100px;
+                    font-family: 'Manjari';
                 }
             }
 
@@ -71,6 +79,8 @@
             padding: 5px;
             margin-left: 30px;
             width: 15%;
+            font-family: 'Manjari';
+            font-weight: 800;
         }
     }
 }
