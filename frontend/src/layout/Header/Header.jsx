@@ -30,7 +30,7 @@ export default function Header() {
                 <div className='logo'>
                     <img
                         className="logo__img"
-                        src="./logo.jpg"
+                        src="./img/logo_de_la_ferme_de_la_corne_doree.jpg"
                         alt="Logo de la Ferme de la Corne Dorée"
                     />
                     <h1 className="sr-only logo__main-title">Ferme de la Corne Dorée</h1>
