@@ -33,7 +33,7 @@ export default function ContactForm() {
     }
 
     return (
-        <div className="contact" id="Contact">
+        <section className="contact" id="Contact">
             <h2 className="contact__title">Contact</h2>
             <form method="POST" className="contact__form" onSubmit={handleSubmit}>
                 <div className="contact__form__inputs">
@@ -72,6 +72,6 @@ export default function ContactForm() {
                 {isSubmitted && <p>Merci pour votre message !</p>}
                 <button type="submit" className="contact__form__btn">Envoyer</button>
             </form>
-        </div>
+        </section>
     );
 }
