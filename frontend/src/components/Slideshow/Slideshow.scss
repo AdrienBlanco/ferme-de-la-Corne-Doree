@@ -1,35 +1,54 @@
 @import "../../Utils/keyframes.scss";
+@import "../../Utils/variables.scss";
 
 .SlideCardList {
   position: relative;
   width: 100%;
-  max-width: 1440px;
-  height: 586px;
+  max-width: 100%;
+  height: 300px;
+
   &__click {
     height: 100%;
-    width: 30px;
+    width: 15%;
     z-index: 1;
+    &:hover {
+      cursor: pointer;
+      background-color: $accent;
+      opacity: 0.5;
+    }
+
     &--left {
       position: absolute;
       left: 0;
     }
+
     &--right {
       position: absolute;
       right: 0;
     }
   }
+
   .SlideCard {
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
     width: 100%;
     left: 0;
     top: 0;
     position: absolute;
     transition: opacity 1s;
+
     &--hide {
       opacity: 0;
     }
+
     &--display {
       animation: slide 1s forwards;
     }
+
     &__descriptionContainer {
       position: absolute;
       left: 0;
@@ -38,13 +57,15 @@
       justify-content: center;
       width: 100%;
     }
+
     &__paginationContainer {
       position: absolute;
       left: 0;
-      bottom: 60px;
+      bottom: 2rem;
       display: flex;
       justify-content: center;
       width: 100%;
+
       input {
         cursor: pointer;
         width: 16px;
@@ -53,12 +74,14 @@
 
       }
     }
+
     &__description {
       left: 0;
       bottom: 50px;
       width: 857px;
       border-radius: 8px;
       display: flex;
+
       h3 {
         width: 45%;
         border-right: 1px solid #4314ff;
@@ -69,6 +92,7 @@
         align-items: center;
         margin: 0;
       }
+
       p {
         width: 35%;
         display: flex;
@@ -76,6 +100,7 @@
         padding: 16px;
         font-size: 18px;
       }
+
       div {
         width: 5%;
         display: flex;
@@ -88,4 +113,3 @@
     }
   }
 }
-
