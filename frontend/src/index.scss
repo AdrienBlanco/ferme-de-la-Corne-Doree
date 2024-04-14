@@ -10,15 +10,15 @@ body .App {
   color: $text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-body h1,
-body h2,
-body h3,
-body h4,
-body h5 {
-  font-family: 'Krub';
-  font-weight: 700;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Krub';
+    font-weight: 700;
+  }
 }
 
 code {
