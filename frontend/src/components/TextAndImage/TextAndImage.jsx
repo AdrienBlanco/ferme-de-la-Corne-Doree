@@ -1,6 +1,6 @@
-import "./Presentation.scss";
+import "./TextAndImage.scss";
 
-export default function Presentation({ sectionClass, title, text, illustration }) {
+export default function TextAndImage({ sectionClass, title, text, src, alt }) {
     return (
         <section className={sectionClass}>
             <div className={`${sectionClass}__content`}>
@@ -8,7 +8,7 @@ export default function Presentation({ sectionClass, title, text, illustration }
                 <p className={`${sectionClass}__text`}>{text}</p>
             </div>
             <div className={`${sectionClass}__wrapper`}>
-                <img className={`${sectionClass}__illustration`} src={illustration} alt="illustration de la ferme de la corne dorée" />
+                <img className={`${sectionClass}__illustration`} src={src} alt={alt} />
             </div>
         </section>
     )
