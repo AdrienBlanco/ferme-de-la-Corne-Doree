@@ -1,5 +1,7 @@
 import NavBar from '../../components/NavBar/NavBar';
 import './Header.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 export default function Header() {
 
@@ -10,9 +12,9 @@ export default function Header() {
     ];
 
     const rightNav = [
-        { name: 'Actualités', path: '#actu' },
-        { name: 'Localisation', path: '#location' },
-        { name: 'Contact', path: '#Contact' }
+        { name: 'Actualités', path: '#news' },
+        { name: 'Contact et Localisation', path: '#contact' },
+        { name: <FontAwesomeIcon icon={faFacebook} />, path: 'https://www.facebook.com/profile.php?id=100067318896608' }
     ];
 
     return (
