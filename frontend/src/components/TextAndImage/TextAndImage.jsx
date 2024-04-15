@@ -1,10 +1,10 @@
 import "./TextAndImage.scss";
 
-export default function TextAndImage({ sectionClass, title, text, src, alt }) {
+export default function TextAndImage({ sectionClass, title, text, src, alt, reverse, alignEnd }) {
     return (
-        <section className={sectionClass}>
+        <section className={`${sectionClass} ${reverse}`}>
             <div className={`${sectionClass}__content`}>
-                <h2 className={`${sectionClass}__title`}>{title}</h2>
+                <h2 className={`${sectionClass}__title ${alignEnd}`}>{title}</h2>
                 <p className={`${sectionClass}__text`}>{text}</p>
             </div>
             <div className={`${sectionClass}__wrapper`}>
