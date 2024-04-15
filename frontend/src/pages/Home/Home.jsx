@@ -1,5 +1,6 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import ImageLinks from "../../components/ImagesLinks/ImageLinks";
 import "./Home.scss"
 import homeSlideshow from "../../datas/slideshow.json";
 
@@ -22,6 +23,14 @@ export default function Home() {
                 Quod, consequatur natus nemo veniam explicabo quae dolorum cum ab autem ea ad quidem fugit! Aliquam neque tempore voluptates similique accusamus corrupti, ut voluptatibus officia quod expedita. Consequatur, quia sint?"
                 src="./img/illustration_ferme_de_la_corne_doree.jpg"
                 alt="photo de chèvre couché de soleil à la ferme de la corne dorée"
+            />
+
+            <ImageLinks
+                sectionClass="imagelinks"
+                titles={["Chèvrerie", "Centre equestre"]}
+                links={["/chevrerie", "/centre-equestre"]}
+                src={["./img/illustration_ferme_de_la_corne_doree.jpg", "./img/logo_de_la_ferme_de_la_corne_doree.jpg"]}
+                alt={["photo 1", "photo 2"]}
             />
         </main>
     )
