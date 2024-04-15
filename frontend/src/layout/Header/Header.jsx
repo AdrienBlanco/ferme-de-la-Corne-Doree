@@ -12,8 +12,8 @@ export default function Header() {
     ];
 
     const rightNav = [
-        { name: 'Actualités', path: '#news' },
-        { name: 'Contact et Localisation', path: '#contact' },
+        { name: 'Actualités', path: '#News' },
+        { name: 'Contact et Localisation', path: '#Contact' },
         { name: <FontAwesomeIcon icon={faFacebook} />, path: 'https://www.facebook.com/profile.php?id=100067318896608' }
     ];
 

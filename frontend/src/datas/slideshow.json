@@ -5,15 +5,15 @@
         { "title": "t3", "src": "./img/slide3.png", "alt": "description de la photo3" }
     ],
     
-    "goatSlideshow": [
-        { "title": "t1", "src": "/", "alt": "description" },
-        { "title": "t2", "src": "/", "alt": "description" },
-        { "title": "t3", "src": "/", "alt": "description" }
+    "chevrerieSlideshow": [
+        { "title": "t1", "src": "./img/thomas-de-luze-kqhTq4QiZGA-unsplash.jpg", "alt": "description de la photo1" },
+        { "title": "t2", "src": "./img/sergiu-valena-so8R5rTDTXM-unsplash.jpg", "alt": "description de la photo2" },
+        { "title": "t3", "src": "./img/jarren-simmons-bzzGg63bzAM-unsplash.jpg", "alt": "description de la photo3" }
     ],
 
-    "horseSlideshow": [
-        { "title": "t1", "src": "/", "alt": "description" },
-        { "title": "t2", "src": "/", "alt": "description" },
-        { "title": "t3", "src": "/", "alt": "description" }
+    "centreEquestreSlideshow": [
+        { "title": "t1", "src": "./img/soledad-lorieto-FPGuvs1dso0-unsplash.jpg", "alt": "description de la photo1" },
+        { "title": "t2", "src": "./img/taylor-brandon-3HmP1kOdACU-unsplash.jpg", "alt": "description de la photo2" },
+        { "title": "t3", "src": "./img/taylor-brandon-3N8aGhfyYP8-unsplash.jpg", "alt": "description de la photo3" }
     ]
 }

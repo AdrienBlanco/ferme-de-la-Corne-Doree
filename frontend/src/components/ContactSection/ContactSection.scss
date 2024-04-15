@@ -1,0 +1,16 @@
+.ContactSection {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 30px 50px 30px;
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+}
