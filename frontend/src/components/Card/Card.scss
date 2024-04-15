@@ -1,0 +1,21 @@
+@import '../../Utils/variables.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    position: relative;
+    img {
+        object-fit: cover;
+        height: 500px;        
+    }
+    figcaption {
+        font-size: x-large;
+        margin-top: 1rem;
+        font-family: 'krub';
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: $secondary;
+    }
+}

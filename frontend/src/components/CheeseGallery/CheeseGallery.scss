@@ -1,0 +1,18 @@
+.CheeseGallery {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    &__title {
+        align-self: flex-end;
+        font-size: 32px;
+        padding-bottom: 2rem;
+        text-transform: uppercase;
+    }
+    &__Cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+    }
+}
