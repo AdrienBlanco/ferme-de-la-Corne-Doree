@@ -1,11 +1,11 @@
-import ContactForm from "../../components/ContactForm/ContactForm"
+import Contact from "../../components/Contact/Contact"
 import Coordonnees from "../../components/Coordonnees/Coordonnees"
 import "./Footer.scss";
 
 export default function Footer() {
     return (
         <footer className="footer">
-            <ContactForm />
+            <Contact />
             <Coordonnees />
         </footer>
     )

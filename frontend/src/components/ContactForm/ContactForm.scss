@@ -1,14 +1,4 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 35%;
-    padding: 30px 30px 50px 30px;
-
-    &__title {
-        font-size: 24px;
-    }
-
     &__form {
         display: flex;
         flex-direction: column;
@@ -36,6 +26,10 @@
                     padding: 5px;
                     width: 97%;
                     font-family: 'Manjari';
+                }
+
+                input[name="captcha"] {
+                    width: 20%;
                 }
 
                 select {
