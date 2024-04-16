@@ -3,8 +3,14 @@
 .imagelinks {
     display: flex;
     justify-content: space-evenly;
-    margin: 50px 0;
+    align-items: center;
     width: 100%;
+    height: 450px;
+    background: url(../../../public/img/Wave.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
 
     &__link {
         position: relative;
