@@ -30,8 +30,13 @@ export default function Form() {
             return;
         }
         setIsSubmitted(true);
-        setFormData({ prenom: '', nom: '', email: '', objet: '', message: '', captcha: '' });
-        setErrorMessage('');
+        setTimeout(() => {
+            setIsSubmitted(false);
+            setFormData({ prenom: '', nom: '', email: '', objet: '', message: '', captcha: '' });
+            setErrorMessage('');
+            const newRandomCaptcha = captchas[Math.floor(Math.random() * captchas.length)];
+            setCurrentCaptcha(newRandomCaptcha);
+        }, 5000);
     }
 
   return (
@@ -104,7 +109,7 @@ export default function Form() {
             </div>
         </div>
         {errorMessage && <p className="error">{errorMessage}</p>}
-        {isSubmitted && <p>Merci pour votre message !</p>}
+        {isSubmitted && <p className='confirm'>Merci pour votre message !</p>}
         <button type="submit" className="contact__form__btn">Envoyer</button>
     </form>
   )
