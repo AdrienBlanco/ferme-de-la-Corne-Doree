@@ -76,5 +76,16 @@
             font-family: 'Manjari';
             font-weight: 800;
         }
+
+        .confirm {
+            margin: 0 0 20px 30px;
+            animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 4s forwards;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+            margin: 0 0 20px 30px;
+        }
     }
 }
