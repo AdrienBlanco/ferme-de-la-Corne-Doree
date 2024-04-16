@@ -40,6 +40,6 @@ export default function Home() {
                 newsDate={["01/01/2021", "02/01/2021", "03/01/2021"]}
                 newsContent={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta."]}
             />
-        </main>
+        </div>
     )
 };
