@@ -26,8 +26,7 @@ export default function CentreEquestre() {
 
             <TextAndImage
                 sectionClass="textandimage"
-                alignEnd="textandimage__title--align-end"
-                reverse="textandimage--reverse"
+                reverse={true}
                 title="Notre Approche Pedagogique"
                 text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta.
                 Exercitationem aspernatur aliquid distinctio sunt officiis architecto, voluptatum fugiat eius pariatur saepe soluta dolore asperiores fugit veniam cupiditate rerum culpa numquam inventore harum adipisci, facere minima quam. Quos, excepturi mollitia.

@@ -9,7 +9,7 @@ export default function Home() {
     const slideshow = homeSlideshow.homeSlideshow;
 
     return (
-        <main className="home">
+        <div className="home">
 
             <Slideshow
                 array={slideshow}
@@ -32,6 +32,6 @@ export default function Home() {
                 src={["./img/illustration_ferme_de_la_corne_doree.jpg", "./img/logo_de_la_ferme_de_la_corne_doree.jpg"]}
                 alt={["photo 1", "photo 2"]}
             />
-        </main>
+        </div>
     )
 };

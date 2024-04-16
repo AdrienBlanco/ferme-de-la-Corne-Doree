@@ -1,4 +1,4 @@
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.scss';
 import Header from './layout/Header/Header';
 import ContactSection from './components/ContactSection/ContactSection';
@@ -11,8 +11,8 @@ import Error from './pages/Error/Error';
 function App() {
   return (
     <div className="App">
-      <div className="main-container">
-        <Header />
+      <Header />
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/chevrerie" element={<Chevrerie />} />
@@ -20,8 +20,8 @@ function App() {
           <Route path="*" element={<Error />} />
         </Routes>
         <ContactSection />
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
