@@ -1,3 +1,5 @@
+@import "../../Utils/variables.scss";
+
 .imagelinks {
     display: flex;
     justify-content: space-evenly;
@@ -13,6 +15,8 @@
         &:hover {
             transform: scale(1.1);
         }
+        box-shadow: $box-shadow;
+        border-radius: 10px;
     }
 
     &__title {
@@ -27,6 +31,6 @@
         width: 30vw;
         height: 100%;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: 10px;
     }
 }
