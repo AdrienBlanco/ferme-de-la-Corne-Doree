@@ -1,0 +1,48 @@
+@import "../../Utils/variables.scss";
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
+    background: $secondary;
+
+    &__title {
+        font-size: 24px;
+        margin-left: 5%;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 20%;
+        padding: 25px;
+        background: $background;
+        border-radius: 7px;
+        box-shadow: $box-shadow;
+
+        &--text {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--date {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
