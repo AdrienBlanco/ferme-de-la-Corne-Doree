@@ -1,3 +1,5 @@
+@import "../../Utils/variables.scss";
+
 .location {
     display: flex;
     flex-direction: column;
@@ -23,7 +25,9 @@
 
     &__map {
         iframe {
-            border: 1px solid black;
+            border: 1px solid $accent;
+            width: 30vw;
+            height: 30vw;
         }
     }
 }
