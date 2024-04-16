@@ -1,8 +1,9 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import CheeseGallery from "../../components/CheeseGallery/CheeseGallery";
+import News from "../../components/News/News";
 import "./Chevrerie.scss"
 import chevrerieSlideshow from "../../datas/slideshow.json";
-import CheeseGallery from "../../components/CheeseGallery/CheeseGallery";
 
 export default function Chevrerie() {
 
@@ -26,6 +27,13 @@ export default function Chevrerie() {
             />
 
             <CheeseGallery />
+
+            <News
+                sectionClass="news"
+                newsTitle={["Actualités", "Actualités", "Actualités"]}
+                newsDate={["01/01/2021", "02/01/2021", "03/01/2021"]}
+                newsContent={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta.", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dignissimos culpa quisquam corrupti voluptatibus aut tempore recusandae quas beatae sequi iure, odit officiis facere saepe ipsam ratione ut voluptas soluta."]}
+            />
         </main>
     )
 };
