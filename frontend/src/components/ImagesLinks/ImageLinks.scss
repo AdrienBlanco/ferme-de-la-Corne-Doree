@@ -6,11 +6,6 @@
     align-items: center;
     width: 100%;
     height: 450px;
-    background: url(../../../public/img/Wave.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: visible;
 
     &__link {
         position: relative;
@@ -39,4 +34,12 @@
         object-fit: cover;
         border-radius: 10px;
     }
+}
+
+.waveBg {
+    background: url(../../../public/img/Wave.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
 }

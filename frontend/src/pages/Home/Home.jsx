@@ -28,6 +28,7 @@ export default function Home() {
 
             <ImageLinks
                 sectionClass="imagelinks"
+                wave={true}
                 titles={["Chèvrerie", "Centre equestre"]}
                 links={["/chevrerie", "/centre-equestre"]}
                 src={["./img/illustration_ferme_de_la_corne_doree.jpg", "./img/logo_de_la_ferme_de_la_corne_doree.jpg"]}
