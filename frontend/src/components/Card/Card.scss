@@ -3,11 +3,11 @@
 .card {
     display: flex;
     flex-direction: column;
-    width: 30%;
     position: relative;
     img {
         object-fit: cover;
-        height: 500px;        
+        height: 20vw;    
+        border-radius: 2%;    
     }
     figcaption {
         font-size: x-large;
