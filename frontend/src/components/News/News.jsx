@@ -2,7 +2,7 @@ import "./News.scss"
 
 export default function News({sectionClass, newsTitle, newsDate, newsContent}) {
   return (
-    <section className={`${sectionClass}`}>
+    <section className={`${sectionClass}`} id="News">
         <h2 className={`${sectionClass}__title`}>Nos Actualités</h2>
         <div className={`${sectionClass}__cards`}>
             {newsTitle.map((title, index) => (

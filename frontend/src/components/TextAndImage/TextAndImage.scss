@@ -10,6 +10,10 @@
 
     &--reverse {
         flex-direction: row-reverse;
+
+        .textandimage__text {
+            align-self: flex-end;
+        }
     }
 
     &__content {
