@@ -2,7 +2,8 @@
 
 .textandimage {
     display: flex;
-    gap: 30px;
+    align-items: center;
+    gap: 8vw;
     padding: 40px;
     margin: 30px auto;
     max-width: 85vw;
@@ -34,16 +35,19 @@
     }
 
     &__text {
-        width: 80%;
+        // width: 80%;
         font-weight: 400;
         text-align: justify;
+        font-size: 24px;
     }
 
     &__illustration {
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         object-fit: cover;
         border-radius: 5px;
         box-shadow: $box-shadow;
+
+        // tablet width 300px and height 300px
     }
 }
