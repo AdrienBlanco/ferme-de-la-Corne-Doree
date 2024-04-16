@@ -13,8 +13,8 @@ export default function Header() {
 
     const rightNav = [
         { name: 'Actualités', path: '#News' },
-        { name: 'Contact et Localisation', path: '#Contact' },
-        { name: <FontAwesomeIcon icon={faFacebook} />, path: 'https://www.facebook.com/profile.php?id=100067318896608' }
+        { name: 'Contact & Localisation', path: '#Contact' },
+        { name: <FontAwesomeIcon icon={faFacebook} />, path: 'https://www.facebook.com/profile.php?id=100067318896608', target: '_blank' }
     ];
 
     return (
@@ -43,6 +43,7 @@ export default function Header() {
                             key={index}
                             name={item.name}
                             path={item.path}
+                            target={item.target}
                         />
                     ))}
                 </ul>
