@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import "./ImageLinks.scss";
 
 export default function ImageLinks({sectionClass, titles, links, src, alt}) {

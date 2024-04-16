@@ -1,13 +1,29 @@
+@import "../../Utils/variables.scss";
+
 .imagelinks {
     display: flex;
-    justify-content: space-evenly;
-    padding: 50px;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 30px auto;
+    width: 1040px;
+    max-width: 1040px;
+
+    &__content {
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 
     &__link {
         position: relative;
         display: flex;
         width: 100%;
         height: 250px;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
     }
 
     &__title {
@@ -22,6 +38,6 @@
         width: 450px;
         height: 100%;
         object-fit: cover;
-        border-radius: 15px;
+        border-radius: 10px;
     }
 }
