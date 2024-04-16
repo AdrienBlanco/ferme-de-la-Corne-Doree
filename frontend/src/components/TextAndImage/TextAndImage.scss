@@ -5,8 +5,7 @@
     align-items: center;
     gap: 8vw;
     padding: 40px;
-    margin: 30px auto;
-    max-width: 85vw;
+    // max-width: 85vw;
 
     &--reverse {
         flex-direction: row-reverse;
@@ -14,6 +13,12 @@
         .textandimage__text {
             align-self: flex-end;
         }
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        max-width: 85vw;
     }
 
     &__content {
@@ -35,7 +40,6 @@
     }
 
     &__text {
-        // width: 80%;
         font-weight: 400;
         text-align: justify;
         font-size: 24px;
@@ -50,4 +54,12 @@
 
         // tablet width 300px and height 300px
     }
+}
+
+.waveBg {
+    background: url(../../../public/img/Wave.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: visible;
 }
