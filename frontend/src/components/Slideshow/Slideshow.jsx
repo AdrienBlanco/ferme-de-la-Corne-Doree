@@ -22,7 +22,7 @@ export default function Slideshow({ array }) {
   });
 
   return (
-    <div className="SlideCardList">
+    <section className="SlideCardList">
       <div className="SlideCardList__click SlideCardList__click--left" onClick={() => prevCard()}></div>
       <div className="SlideCardList__click SlideCardList__click--right" onClick={() => nextCard()}></div>
       {array.map((item, idx) => (
@@ -47,6 +47,6 @@ export default function Slideshow({ array }) {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
