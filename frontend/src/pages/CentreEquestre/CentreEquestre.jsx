@@ -9,7 +9,7 @@ export default function CentreEquestre() {
     const slideshow = centreEquestreSlideshow.centreEquestreSlideshow;
 
     return (
-        <main className="home">
+        <div className="home">
 
             <Slideshow
                 array={slideshow}
@@ -36,6 +36,6 @@ export default function CentreEquestre() {
                 src="./img/illustration_ferme_de_la_corne_doree.jpg"
                 alt="photo de chèvre couché de soleil à la ferme de la corne dorée"
             />
-        </main>
+        </div>
     )
 };
