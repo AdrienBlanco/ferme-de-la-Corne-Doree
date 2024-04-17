@@ -4,6 +4,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 40px;
+
     p {
         display: flex;
         flex-direction: row;
@@ -22,14 +23,19 @@ footer {
     align-items: center;
 
 
+
     &--M {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #0b6d70;
+        position: relative;
+        top: -1px;
 
     }
 
     &--A {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #8BCCA7;
+        position: relative;
+        top: -1px;
     }
 }
