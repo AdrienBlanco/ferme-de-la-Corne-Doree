@@ -14,7 +14,7 @@ export default function Header() {
     const rightNav = [
         { name: 'Actualités', path: '#News' },
         { name: 'Contact & Localisation', path: '#Contact' },
-        { name: <FontAwesomeIcon icon={faFacebook} />, path: 'https://www.facebook.com/profile.php?id=100067318896608', target: '_blank' }
+        { name: <FontAwesomeIcon icon={faFacebook} aria-hidden={false} title='facebook' />, path: 'https://www.facebook.com/profile.php?id=100067318896608', target: '_blank'}
     ];
 
     return (
