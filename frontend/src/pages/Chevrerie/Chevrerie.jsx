@@ -10,7 +10,7 @@ export default function Chevrerie() {
     const slideshow = chevrerieSlideshow.chevrerieSlideshow;
 
     return (
-        <main className="home">
+        <div className="home">
 
             <Slideshow
                 array={slideshow}
@@ -27,6 +27,6 @@ export default function Chevrerie() {
             />
 
             <CheeseGallery />
-        </main>
+        </div>
     )
 };

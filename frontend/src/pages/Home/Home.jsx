@@ -1,7 +1,7 @@
+// import React from "react";
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import ImageLinks from "../../components/ImagesLinks/ImageLinks";
-import News from "../../components/News/News";
 import "./Home.scss"
 import homeSlideshow from "../../datas/slideshow.json";
 
@@ -10,7 +10,7 @@ export default function Home() {
     const slideshow = homeSlideshow.homeSlideshow;
 
     return (
-        <div className="home">
+        <>
 
             <Slideshow
                 array={slideshow}
@@ -34,6 +34,6 @@ export default function Home() {
                 src={["./img/antonio-janeski-RyFWaB-N2RA-unsplash.jpg", "./img/taylor-brandon-3HmP1kOdACU-unsplash.jpg"]}
                 alt={["photo 1", "photo 2"]}
             />
-        </div>
+        </>
     )
 };

@@ -1,11 +1,10 @@
 @import "../../Utils/variables.scss";
 
-footer {
+.footer {
     display: flex;
     justify-content: center;
     padding: 40px;
-
-    p {
+    &__content {
         display: flex;
         flex-direction: row;
         align-items: center;
