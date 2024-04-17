@@ -1,6 +1,5 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
-import News from "../../components/News/News";
 import "./CentreEquestre.scss";
 import centreEquestreSlideshow from "../../datas/slideshow.json";
 

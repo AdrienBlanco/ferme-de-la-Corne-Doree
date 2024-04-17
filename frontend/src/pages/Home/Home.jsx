@@ -1,4 +1,3 @@
-// import React from "react";
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import ImageLinks from "../../components/ImagesLinks/ImageLinks";

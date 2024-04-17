@@ -21,7 +21,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         text-align: center;
     }
 
@@ -32,7 +32,7 @@
         width: 22vw;
         padding: 25px;
         background: $background;
-        border-radius: 7px;
+        border-radius: 20px;
         box-shadow: $box-shadow;
 
         &--text {
@@ -51,7 +51,7 @@
         }
 
         &--date {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 400;
         }
     }
