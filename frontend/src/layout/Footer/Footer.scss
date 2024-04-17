@@ -1,0 +1,35 @@
+@import "../../Utils/variables.scss";
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        color: $text;
+    }
+}
+
+.margin-logo {
+    font-family: 'Manjari';
+    font-weight: 100;
+    font-size: 1rem;
+    color: grey;
+    display: flex;
+    align-items: center;
+
+
+    &--M {
+        font-size: 1.5rem;
+        color: #0b6d70;
+
+    }
+
+    &--A {
+        font-size: 1.5rem;
+        color: #8BCCA7;
+    }
+}

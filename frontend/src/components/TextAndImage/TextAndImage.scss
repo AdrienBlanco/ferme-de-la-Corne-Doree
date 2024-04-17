@@ -4,8 +4,7 @@
     display: flex;
     align-items: center;
     gap: 8vw;
-    padding: 40px;
-    // max-width: 85vw;
+    padding: 20px 0;
 
     &--reverse {
         flex-direction: row-reverse;
@@ -18,14 +17,15 @@
     &__container {
         display: flex;
         align-items: center;
-        max-width: 85vw;
+        width: 85vw;
+        margin: auto;
     }
 
     &__content {
         display: flex;
         flex-direction: column;
         gap: 35px;
-        padding: 25px 0;
+
     }
 
     &__title {
@@ -54,12 +54,4 @@
 
         // tablet width 300px and height 300px
     }
-}
-
-.waveBg {
-    background: url(../../../public/img/Wave.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: visible;
 }

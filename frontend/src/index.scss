@@ -27,3 +27,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.waveBg {
+  background: url(../public/img/Wave.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+}
