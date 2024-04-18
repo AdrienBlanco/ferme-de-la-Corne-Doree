@@ -1,5 +1,9 @@
-export default function NavBar({name, path, target}) {
+import { useLocation } from 'react-router-dom';
+
+export default function NavBar({ name, path, target }) {
+    const location = useLocation();
+
     return (
-        <li><a href={path} target={target}>{name}</a></li>
+        <li><a className={location.pathname === path ? 'current' : ''} href={path} target={target}>{name}</a></li>
     )
 };
