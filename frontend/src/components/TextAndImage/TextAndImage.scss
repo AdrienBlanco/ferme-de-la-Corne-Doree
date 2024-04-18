@@ -1,4 +1,5 @@
 @import "../../Utils/variables.scss";
+@import "../../Utils/mixins.scss";
 
 .textandimage {
     display: flex;
@@ -51,6 +52,9 @@
         object-fit: cover;
         border-radius: 5px;
         box-shadow: $box-shadow;
+        @include mobile {
+            display: none;
+        }
 
         // tablet width 300px and height 300px
     }
