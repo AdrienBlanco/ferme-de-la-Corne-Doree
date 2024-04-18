@@ -7,7 +7,10 @@ export default function CheeseGallery({ src, alt, caption }) {
     return (
         <div className="CheeseGallery waveBg">
             <div className="CheeseGallery__container">
-                <h2 className="CheeseGallery__title">Nos Fromages de Chèvre</h2>
+                <div className="CheeseGallery__title title-container">
+                    <h2>Nos Fromages de Chèvre</h2>
+                    <div className="highlight"></div>
+                </div>
                 <div className="CheeseGallery__Cards">
                     {cheeseGallery.map((item, idx) => (
                         <Card
