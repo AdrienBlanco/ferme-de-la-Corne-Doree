@@ -3,13 +3,20 @@ import "./Slideshow.scss";
 
 export default function Slideshow({ array }) {
   const [index, setIndex] = useState(0);
+  const [animationType, setAnimationType] = useState("");
 
   const nextCard = () => {
+    setAnimationType('slideInFromRight');
     setIndex(index < array.length - 1 ? index + 1 : 0);
   };
 
   const prevCard = () => {
+    setAnimationType('slideInFromLeft');
     setIndex(index === 0 ? array.length - 1 : index - 1);
+  };
+
+  const handleAnimationEnd = () => {
+    setAnimationType(""); // reset animation
   };
 
   useEffect(() => {
@@ -28,8 +35,8 @@ export default function Slideshow({ array }) {
       {array.map((item, idx) => (
         <div
           key={idx}
-          className={`SlideCard SlideCard--${index === idx ? "display" : "hide"
-            }`}
+          className={`SlideCard SlideCard--${index === idx ? "display" : "hide"} SlideCard--${animationType}`}
+          onAnimationEnd={handleAnimationEnd}
         >
           <img src={item.src} alt={item.alt} />
         </div>
