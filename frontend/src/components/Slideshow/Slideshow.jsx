@@ -3,7 +3,7 @@ import "./Slideshow.scss";
 
 export default function Slideshow({ array }) {
   const [index, setIndex] = useState(0);
-  const [animationType, setAnimationType] = useState("");
+  const [animationType, setAnimationType] = useState('');
 
   const nextCard = () => {
     setAnimationType('slideInFromRight');
@@ -18,6 +18,14 @@ export default function Slideshow({ array }) {
   const handleAnimationEnd = () => {
     setAnimationType(""); // reset animation
   };
+
+  const handleCheckbox = (radioIdx) => (
+    radioIdx < index
+      ? setAnimationType('slideInFromLeft')
+      : radioIdx > index
+        ? setAnimationType('slideInFromRight')
+        : null
+  );
 
   useEffect(() => {
     const time = setTimeout(() => {
@@ -35,7 +43,7 @@ export default function Slideshow({ array }) {
       {array.map((item, idx) => (
         <div
           key={idx}
-          className={`SlideCard SlideCard--${index === idx ? "display" : "hide"} SlideCard--${animationType}`}
+          className={`SlideCard SlideCard${index === idx ? "" : "--hide"} SlideCard--${animationType}`}
           onAnimationEnd={handleAnimationEnd}
         >
           <img src={item.src} alt={item.alt} />
@@ -50,6 +58,7 @@ export default function Slideshow({ array }) {
               name="radio-button"
               checked={radioIdx === index}
               onChange={() => setIndex(radioIdx)}
+              onClick={() => handleCheckbox(radioIdx)}
             />
           ))}
         </div>

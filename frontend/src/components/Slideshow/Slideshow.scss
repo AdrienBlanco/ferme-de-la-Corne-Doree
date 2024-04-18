@@ -16,8 +16,7 @@
     transition: background-color 0.5s ease-in;
     &:hover {
       cursor: pointer;
-      background-color: $accent;
-      opacity: 0.5;
+      background: rgba($accent, 0.5);
     }
 
     &--left {
@@ -36,7 +35,6 @@
     left: 0;
     top: 0;
     position: absolute;
-    transition: opacity 1s;
 
     img {
       width: 100%;
@@ -48,16 +46,12 @@
       opacity: 0;
     }
 
-    &--display {
-      // animation: slideInFromRight 1s forwards; // obliger de desactiver cette animation sinon on a un conflit avec la transition
-    }
-
     &--slideInFromRight {
-      animation: slideInFromRight 1s forwards;
+      animation: slideInFromRight 1s;
     }
 
     &--slideInFromLeft {
-      animation: slideInFromLeft 1s forwards;
+      animation: slideInFromLeft 1s;
     }
 
     &__descriptionContainer {
@@ -88,7 +82,7 @@
       }
 
       input:checked {
-        background-color: $accent;
+        background: rgba($accent, 0.5);
       }
     }
 
