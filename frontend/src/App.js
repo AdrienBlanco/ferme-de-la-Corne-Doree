@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.scss';
 import Header from './layout/Header/Header';
 import ContactSection from './components/ContactSection/ContactSection';
 import News from './components/News/News';
