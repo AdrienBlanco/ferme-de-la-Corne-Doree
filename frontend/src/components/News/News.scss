@@ -1,4 +1,5 @@
 @import "../../Utils/variables.scss";
+@import "../../Utils/mixins.scss";
 
 .news {
     display: flex;
@@ -23,6 +24,10 @@
         justify-content: space-between;
         align-items: stretch;
         text-align: center;
+
+        @include tablet {
+            gap: 20px;
+        }
     }
 
     &__card {
@@ -34,6 +39,10 @@
         background: rgba($background, 0.8);
         border-radius: 15px;
         box-shadow: $box-shadow;
+
+        @include tablet {
+            width: 85vw;
+        }
 
         &--text {
             font-size: 20px;
