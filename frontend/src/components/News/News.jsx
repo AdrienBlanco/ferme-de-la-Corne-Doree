@@ -8,7 +8,10 @@ export default function News() {
     return (
         <section className={`${sectionClass}`} id="News">
             <div className={`${sectionClass}__container`}>
-                <h2 className={`${sectionClass}__title`}>Nos Actualités</h2>
+                <div className={`${sectionClass}__title title-container`}>
+                    <h2>Nos Actualités</h2>
+                    <div className="highlight"></div>
+                </div>
                 <div className={`${sectionClass}__cards`}>
                     {newsArray.map((item, index) => (
                         <Article
