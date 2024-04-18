@@ -1,6 +1,6 @@
 import "./TextAndImage.scss";
 
-export default function TextAndImage({ sectionClass, title, text, src, alt, reverse, wave}) {
+export default function TextAndImage({ sectionClass, title, text, src, alt, reverse, wave }) {
 
     const reverseSection = `${sectionClass} ${reverse ? `${sectionClass}--reverse` : ''}`;
     const alignEndTitle = `${sectionClass}__title ${reverse ? `${sectionClass}__title--align-end` : ''}`;
@@ -10,7 +10,10 @@ export default function TextAndImage({ sectionClass, title, text, src, alt, reve
         <section className={`${waveSection}`}>
             <div className={`${reverseSection} ${sectionClass}__container`}>
                 <div className={`${sectionClass}__content`}>
-                    <h2 className={`${alignEndTitle}`}>{title}</h2>
+                    <div className={`${alignEndTitle} title-container`}>
+                        <h2>{title}</h2>
+                        <div className="highlight"></div>
+                    </div>
                     <p className={`${sectionClass}__text`}>{text}</p>
                 </div>
                 <div className={`${sectionClass}__wrapper`}>
