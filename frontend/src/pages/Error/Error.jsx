@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 export default function Error() {
-    document.title = "Ferme de la corne Dorée - Page not Found"
+    document.title = "Ferme de la corne dorée - Page not Found"
 
     return (
             <section className="Error">

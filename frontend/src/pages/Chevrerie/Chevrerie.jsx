@@ -6,7 +6,7 @@ import chevrerieSlideshow from "../../datas/slideshow.json";
 
 export default function Chevrerie() {
 
-    document.title = "Ferme de la corne Dorée - Chèvrerie"
+    document.title = "Ferme de la corne dorée - Chèvrerie"
 
     const slideshow = chevrerieSlideshow.chevrerieSlideshow;
 
