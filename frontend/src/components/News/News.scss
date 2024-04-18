@@ -31,8 +31,8 @@
         gap: 20px;
         width: 22vw;
         padding: 25px;
-        background: $background;
-        border-radius: 20px;
+        background: rgba($background, 0.8);
+        border-radius: 15px;
         box-shadow: $box-shadow;
 
         &--text {
