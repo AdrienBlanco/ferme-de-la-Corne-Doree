@@ -2,6 +2,11 @@
 
 header {
     height: 12vh;
+    background: $background;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 50%;
 }
 
 nav {
