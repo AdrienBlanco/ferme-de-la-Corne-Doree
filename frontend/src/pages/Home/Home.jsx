@@ -6,6 +6,8 @@ import homeSlideshow from "../../datas/slideshow.json";
 
 export default function Home() {
 
+    document.title = "Ferme de la corne Dorée"
+
     const slideshow = homeSlideshow.homeSlideshow;
 
     return (

@@ -5,6 +5,8 @@ import centreEquestreSlideshow from "../../datas/slideshow.json";
 
 export default function CentreEquestre() {
 
+    document.title = "Ferme de la corne Dorée - Centre-Equestre"
+
     const slideshow = centreEquestreSlideshow.centreEquestreSlideshow;
 
     return (
