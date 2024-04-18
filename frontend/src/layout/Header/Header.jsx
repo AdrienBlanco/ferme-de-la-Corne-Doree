@@ -1,9 +1,24 @@
+import { useState, useEffect } from 'react';
 import NavBar from '../../components/NavBar/NavBar';
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 export default function Header() {
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 5) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+    }, []);
 
     const leftNav = [
         { name: 'Accueil', path: '/' },
@@ -18,7 +33,7 @@ export default function Header() {
     ];
 
     return (
-        <header>
+        <header className={scrolled ? 'scrolled': ''}>
             <nav>
                 <ul className="nav__list nav__list--left">
                     {leftNav.map((item, index) => (
@@ -29,7 +44,7 @@ export default function Header() {
                         />
                     ))}
                 </ul>
-                <div className='logo'>
+                <div className={`logo ${scrolled ? 'logo--scrolled' : ''}`}>
                     <img
                         className="logo__img"
                         src="./img/logo_de_la_ferme_de_la_corne_doree.jpg"

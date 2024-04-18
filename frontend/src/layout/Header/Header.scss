@@ -7,6 +7,10 @@ header {
     z-index: 1;
     top: 0;
     left: 50%;
+
+    &.scrolled {
+        box-shadow: $box-shadow;
+    }
 }
 
 nav {
@@ -26,6 +30,7 @@ nav {
     top: 0;
     z-index: 2;
     border-radius: 50%;
+    transition: transform 0.5s ease;
 
     &__img {
         width: clamp(100px, 12vw, 200px);
@@ -35,6 +40,10 @@ nav {
 
     &__main-title {
         font-size: 1rem;
+    }
+
+    &--scrolled {
+        transform: translateY(-50px);
     }
 }
 
