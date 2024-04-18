@@ -78,6 +78,10 @@ nav {
                 }
             }
 
+            .current {
+                color: $primary;
+            }
+
             svg {
                 font-size: clamp(1rem, 1.5vw, 2rem);
             }
