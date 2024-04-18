@@ -2,7 +2,7 @@
 @import "./Utils/variables.scss";
 
 body .App {
-  font-family: 'Manjari', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: $text-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   background: $background;
@@ -18,7 +18,7 @@ body .App {
   h3,
   h4,
   h5 {
-    font-family: 'Krub';
+    font-family: $title-font;
     font-weight: 700;
   }
 }
@@ -26,6 +26,10 @@ body .App {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input, label, select, textarea {
+  font-family: $text-font;
 }
 
 .waveBg {

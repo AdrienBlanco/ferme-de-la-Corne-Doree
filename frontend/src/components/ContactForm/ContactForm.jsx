@@ -5,9 +5,9 @@ import "./ContactForm.scss";
 
 export default function Form() {
     const captchas = [
-        { question: 'Que font 7 + 2 ?', answer: '9' },
-        { question: 'Que font 5 + 1 ?', answer: '6' },
-        { question: 'Que font 6 + 1 ?', answer: '7' },
+        { question: 'Combien font 7 + 2 ?', answer: '9' },
+        { question: 'Combien font 5 + 1 ?', answer: '6' },
+        { question: 'Combien font 6 + 1 ?', answer: '7' },
     ]
     const [formData, setFormData] = useState({ prenom: '', nom: '', email: '', objet: '', message: '', captcha: ''});
     const [isSubmitted, setIsSubmitted] = useState(false);
