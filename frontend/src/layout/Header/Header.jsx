@@ -34,7 +34,7 @@ export default function Header() {
 
     return (
         <header className={scrolled ? 'scrolled': ''}>
-            <nav>
+            <nav className={scrolled ? 'nav--scrolled': ''}>
                 <ul className="nav__list nav__list--left">
                     {leftNav.map((item, index) => (
                         <NavBar
