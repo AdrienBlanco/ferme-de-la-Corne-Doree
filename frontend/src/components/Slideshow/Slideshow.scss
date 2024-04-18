@@ -32,24 +32,32 @@
   }
 
   .SlideCard {
-    img {
-      width: 100%;
-      height: 88vh;
-      object-fit: cover;
-    }
-
     width: 100%;
     left: 0;
     top: 0;
     position: absolute;
     transition: opacity 1s;
 
+    img {
+      width: 100%;
+      height: 88vh;
+      object-fit: cover;
+    }
+
     &--hide {
       opacity: 0;
     }
 
     &--display {
-      animation: slide 1s forwards;
+      // animation: slideInFromRight 1s forwards; // obliger de desactiver cette animation sinon on a un conflit avec la transition
+    }
+
+    &--slideInFromRight {
+      animation: slideInFromRight 1s forwards;
+    }
+
+    &--slideInFromLeft {
+      animation: slideInFromLeft 1s forwards;
     }
 
     &__descriptionContainer {
