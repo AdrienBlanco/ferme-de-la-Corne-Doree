@@ -1,3 +1,4 @@
+import Highlight from "../Highlight/Highlight";
 import "./TextAndImage.scss";
 
 export default function TextAndImage({ sectionClass, title, text, src, alt, reverse, wave }) {
@@ -11,8 +12,7 @@ export default function TextAndImage({ sectionClass, title, text, src, alt, reve
             <div className={`${reverseSection} ${sectionClass}__container`}>
                 <div className={`${sectionClass}__content`}>
                     <div className={`${alignEndTitle} title-container`}>
-                        <h2>{title}</h2>
-                        <div className="highlight"></div>
+                        <Highlight tag="h2">{title}</Highlight>
                     </div>
                     <p className={`${sectionClass}__text`}>{text}</p>
                 </div>

@@ -1,4 +1,5 @@
 import Article from "../Article/Article";
+import Highlight from "../Highlight/Highlight";
 import "./News.scss";
 import newsArray from "../../datas/news.json";
 
@@ -9,8 +10,7 @@ export default function News() {
         <section className={`${sectionClass}`} id="News">
             <div className={`${sectionClass}__container`}>
                 <div className={`${sectionClass}__title title-container`}>
-                    <h2>Nos Actualités</h2>
-                    <div className="highlight"></div>
+                    <Highlight tag="h2">Nos Actualités</Highlight>
                 </div>
                 <div className={`${sectionClass}__cards`}>
                     {newsArray.map((item, index) => (
