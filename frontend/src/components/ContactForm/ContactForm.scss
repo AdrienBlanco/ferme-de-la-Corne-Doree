@@ -21,13 +21,18 @@
                 label {
                     text-align: left;
                     font-size: 14px;
+                    font-weight: 800;
                 }
 
                 input {
                     display: flex;
                     align-items: center;
-                    padding: 5px;
+                    padding: 8px;
                     width: 97%;
+                    background: rgba($text, 0.1);
+                    border-radius: 25px;
+                    border: none;
+                    outline-color: $primary;
                 }
 
                 input[name="captcha"] {
@@ -37,14 +42,22 @@
                 select {
                     display: flex;
                     align-items: center;
-                    padding: 5px;
+                    padding: 8px;
+                    background: rgba($text, 0.1);
+                    border-radius: 25px;
+                    border: none;
+                    outline-color: $primary;
                 }
 
                 textarea {
                     display: flex;
                     align-items: center;
-                    padding: 5px;
+                    padding: 8px;
                     height: 100px;
+                    background: rgba($text, 0.1);
+                    border-radius: 15px;
+                    border: none;
+                    outline-color: $primary;
                 }
             }
 
@@ -75,8 +88,8 @@
             font-weight: 800;
             box-shadow: $light-box-shadow;
             border: none;
-            border-radius: 3px;
-            padding: 7px;
+            border-radius: 25px;
+            padding: 10px 15px;
             margin-left: 30px;
             width: 15%;
             cursor: pointer;
@@ -99,7 +112,7 @@
                 left: 0;
                 background: rgba($primary, 0.5);
                 box-shadow: $box-shadow;
-                border-radius: 3px;
+                border-radius: 25px;
                 opacity: 0;
                 z-index: -1;
                 transition: opacity 0.3s ease-in-out 0.1s;

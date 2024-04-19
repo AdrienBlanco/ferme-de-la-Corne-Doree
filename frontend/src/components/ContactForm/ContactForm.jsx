@@ -46,7 +46,7 @@ export default function Form() {
             <div className="contact__form__inputs--wrapper">
                 <div>
                     <Field
-                        label="Prénom"
+                        label="Prénom *"
                         name="prenom"
                         value={formData.prenom}
                         handleChange={handleChange}
@@ -56,7 +56,7 @@ export default function Form() {
                 </div>
                 <div>
                     <Field
-                        label="Nom"
+                        label="Nom *"
                         name="nom"
                         value={formData.nom}
                         handleChange={handleChange}
@@ -68,7 +68,7 @@ export default function Form() {
             <div className="contact__form__inputs--wrapper">
                 <Field
                     type={FIELD_TYPES.INPUT_EMAIL}
-                    label="Email"
+                    label="Email *"
                     name="email"
                     value={formData.email}
                     handleChange={handleChange}
@@ -78,7 +78,7 @@ export default function Form() {
             </div>
             <div className="contact__form__inputs--wrapper">
                 <Select
-                    label="Objet"
+                    label="Objet *"
                     name="objet"
                     value={formData.objet}
                     handleChange={handleChange}
@@ -90,7 +90,7 @@ export default function Form() {
             <div className="contact__form__inputs--wrapper">
                 <Field
                     type={FIELD_TYPES.TEXTAREA}
-                    label="Message"
+                    label="Message *"
                     name="message"
                     value={formData.message}
                     handleChange={handleChange}
