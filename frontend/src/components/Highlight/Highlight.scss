@@ -9,3 +9,8 @@
     background: rgba($primary, 0.4);
     transition: width 1.3s ease-in-out;
   }
+
+.title-container {
+  position: relative;
+  display: inline-block;
+}
