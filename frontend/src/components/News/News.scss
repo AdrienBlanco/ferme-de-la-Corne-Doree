@@ -38,7 +38,7 @@
         padding: 25px;
         background: rgba($background, 0.8);
         border-radius: 15px;
-        box-shadow: $box-shadow;
+        box-shadow: $light-box-shadow;
 
         @include tablet {
             width: 85vw;
