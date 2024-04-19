@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     gap: 10%;
+    flex-wrap: wrap;
 
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 80px 30px  40px 30px;
-        box-shadow: $light-box-shadow;
         border-radius: 10px;
     }
     

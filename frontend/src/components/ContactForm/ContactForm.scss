@@ -28,7 +28,7 @@
                     display: flex;
                     align-items: center;
                     padding: 8px;
-                    width: 97%;
+                    width: 96%;
                     background: rgba($text, 0.1);
                     border-radius: 25px;
                     border: none;
@@ -98,6 +98,7 @@
             transition: all 0.3s ease-in-out 0.1s;
 
             &:hover {
+                transform: scale(110%);
                 &::after {
                     opacity: 1;
                 }
@@ -111,7 +112,7 @@
                 bottom: 0;
                 left: 0;
                 background: rgba($primary, 0.5);
-                box-shadow: $box-shadow;
+                box-shadow: $very-light-box-shadow;
                 border-radius: 25px;
                 opacity: 0;
                 z-index: -1;
