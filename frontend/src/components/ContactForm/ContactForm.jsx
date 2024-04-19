@@ -13,6 +13,7 @@ export default function Form() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [currentCaptcha, setCurrentCaptcha] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
+    const [clicked, setClicked] = useState(false);
 
     useEffect(() => {
         const randomCaptcha = captchas[Math.floor(Math.random() * captchas.length)];
@@ -110,7 +111,7 @@ export default function Form() {
         </div>
         {errorMessage && <p className="error">{errorMessage}</p>}
         {isSubmitted && <p className='confirm'>Merci pour votre message !</p>}
-        <button type="submit" className="contact__form__btn">Envoyer</button>
+        <button type="submit" className={`contact__form__btn ${clicked ? 'clicked' : ''}`} onClick={() => setClicked(true)} onAnimationEnd={() => setClicked(false)}>Envoyer</button>
     </form>
   )
 }
