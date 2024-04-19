@@ -1,4 +1,5 @@
 import Card from "../Card/Card";
+import Highlight from "../Highlight/Highlight";
 import cheeseGallery from "../../datas/cheeses.json";
 import './CheeseGallery.scss';
 
@@ -8,8 +9,7 @@ export default function CheeseGallery() {
         <div className="CheeseGallery waveBg">
             <div className="CheeseGallery__container">
                 <div className="CheeseGallery__title title-container">
-                    <h2>Nos Fromages de Chèvre</h2>
-                    <div className="highlight"></div>
+                    <Highlight tag="h2">Nos Fromages de Chèvre</Highlight>
                 </div>
                 <div className="CheeseGallery__Cards">
                     {cheeseGallery.map((item, idx) => (

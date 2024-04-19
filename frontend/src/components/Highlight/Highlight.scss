@@ -1,0 +1,11 @@
+@import "../../Utils/variables.scss";
+
+.highlight {
+    position: absolute;
+    bottom: -15px; 
+    left: -5%;
+    height: 30px;
+    width: 85%;
+    background: rgba($primary, 0.4);
+    transition: width 1.3s ease-in-out;
+  }
