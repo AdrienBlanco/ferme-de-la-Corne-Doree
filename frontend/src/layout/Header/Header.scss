@@ -28,7 +28,6 @@ nav {
     flex-direction: column;
     align-items: center;
     border: 0.8rem solid $background;
-    box-shadow: $light-box-shadow;
     position: absolute;
     top: 0;
     z-index: 2;
@@ -47,6 +46,7 @@ nav {
 
     &--scrolled {
         transform: translateY(-5vh);
+        box-shadow: $light-box-shadow;
     }
 }
 
