@@ -8,7 +8,7 @@ export default function Highlight({ tag: Tag = 'h1', children}) {
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             if (highlightRef.current) {
-                highlightRef.current.style.width = entry.isIntersecting ? '105%' : '85%';
+                highlightRef.current.style.width = entry.isIntersecting ? '100%' : '30%';
             }
         },
         {
