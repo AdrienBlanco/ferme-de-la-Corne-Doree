@@ -2,7 +2,7 @@ import Card from "../Card/Card";
 import cheeseGallery from "../../datas/cheeses.json";
 import './CheeseGallery.scss';
 
-export default function CheeseGallery({ src, alt, caption }) {
+export default function CheeseGallery() {
 
     return (
         <div className="CheeseGallery waveBg">
@@ -18,6 +18,7 @@ export default function CheeseGallery({ src, alt, caption }) {
                             src={item.src}
                             alt={item.alt}
                             caption={item.caption}
+                            description={item.description}
                         />
                     ))
                     }
