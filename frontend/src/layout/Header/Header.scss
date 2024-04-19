@@ -3,7 +3,7 @@
 header {
     height: 12vh;
     background: $background;
-    box-shadow: $box-shadow;
+    box-shadow: $light-box-shadow;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -12,6 +12,7 @@ header {
 
     &.scrolled {
         height: 8vh;
+        box-shadow: $very-light-box-shadow;
     }
 }
 
@@ -46,7 +47,6 @@ nav {
 
     &--scrolled {
         transform: translateY(-5vh);
-        box-shadow: $light-box-shadow;
     }
 }
 
