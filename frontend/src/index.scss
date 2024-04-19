@@ -41,23 +41,9 @@ input, label, select, textarea, button {
   overflow: visible;
 }
 
-
 // Effet Highlight sur les titres
 .title-container {
   position: relative;
   display: inline-block;
-  h2:hover + .highlight {
-    width: 105%;
-  }
-}
-
-.highlight {
-  position: absolute;
-  bottom: -15px; 
-  left: -5%;
-  height: 30px;
-  width: 85%;
-  background: rgba($primary, 0.4);
-  transition: width .2s ease-in-out;
 }
 

@@ -9,7 +9,7 @@ export default function Header() {
 
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 5) {
+        if (offset > 0) {
             setScrolled(true);
         } else {
             setScrolled(false);
