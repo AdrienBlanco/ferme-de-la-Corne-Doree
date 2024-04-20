@@ -29,8 +29,7 @@
 
     &__title {
         font-size: 24px;
-        color: $text;
-        opacity: 0.8;
+        color: rgba($text, 0.9);
         position: absolute;
         top: 25px;
         left: 25px;

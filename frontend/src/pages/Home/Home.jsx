@@ -30,7 +30,7 @@ export default function Home() {
             <ImageLinks
                 sectionClass="imagelinks"
                 wave={true}
-                titles={["Chèvrerie", "Centre equestre"]}
+                titles={["Chèvrerie", "Centre-Equestre"]}
                 links={["/chevrerie", "/centre-equestre"]}
                 src={["./img/antonio-janeski-RyFWaB-N2RA-unsplash.jpg", "./img/taylor-brandon-3HmP1kOdACU-unsplash.jpg"]}
                 alt={["photo 1", "photo 2"]}
