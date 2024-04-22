@@ -8,7 +8,7 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 
     const handleScroll = () => {
         const offset = window.scrollY;
@@ -24,7 +24,7 @@ export default function Header() {
     }
 
     const handleResize = () => {
-        setIsMobile(window.innerWidth <= 768);
+        setIsMobile(window.innerWidth <= 1024);
     }
 
     useEffect(() => {

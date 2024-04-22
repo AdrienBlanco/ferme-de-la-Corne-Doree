@@ -11,7 +11,7 @@ header {
     left: 50%;
     transition: all 0.5s ease;
 
-    @include mobile {
+    @include tablet {
         height: 8vh;
     }
 
@@ -31,13 +31,13 @@ nav {
 
     .nav--burger {
         position: absolute;
-        top: 2.5vh;
+        top: 2.3vh;
         right: 1.5rem;
         display: none;
         font-size: 1.5rem;
         cursor: pointer;
 
-        @include mobile {
+        @include tablet {
             display: block;
         }
     }
@@ -52,25 +52,41 @@ nav {
 
 
     &__img {
-        width: clamp(100px, 12vw, 200px);
-        height: clamp(100px, 12vw, 200px);
+        width: 12vw;
+        height: 12vw;
         border-radius: 50%;
         border: 0.8rem solid $background;
         transition: transform 0.5s ease;
         z-index: 2;
+
+        @include tablet {
+            width: 15vw;
+            height: 15vw;
+        }
+
+        @include mobile {
+            width: 25vw;
+            height: 25vw;
+        }
     }
 
     &__main-title {
         font-size: 1rem;
+        text-transform: uppercase;
         position: fixed;
         width: 30vw;
         left: 1rem;
-        top: 2.5vh;
+        top: 3vh;
+
+        @include mobile {
+            top: 2.5vh;
+        }
     }
 
     &--scrolled {
         .logo__img {
             transform: translateY(-5vh);
+
             @include tablet {
                 transform: translateY(-2.5vh);
             }
@@ -85,7 +101,7 @@ nav {
         align-items: center;
         z-index: 3;
 
-        @include mobile {
+        @include tablet {
             display: none;
         }
 
@@ -104,8 +120,10 @@ nav {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;  
+            gap: 30px;
             text-transform: uppercase;
+            font-weight: bold;
+
             a {
                 color: $text;
                 font-size: 24px;
@@ -118,7 +136,7 @@ nav {
                 display: none;
 
                 &.open {
-                    @include mobile {
+                    @include tablet {
                         display: flex;
                         position: absolute;
                         top: 0;

@@ -11,7 +11,7 @@
   margin-bottom: 40px;
   background: rgba($accent, 0.3);
 
-  @include mobile {
+  @include tablet {
     height: 92vh;
   }
 
@@ -20,7 +20,7 @@
     width: 15%;
     z-index: 1;
     transition: background-color 0.5s ease-in;
-    @include mobile {
+    @include tablet {
       height: 92vh;
       width: 20%;
   }
@@ -52,7 +52,7 @@
       height: 88vh;
       object-fit: cover;
 
-      @include mobile {
+      @include tablet {
         height: 92vh;
       }
     }
