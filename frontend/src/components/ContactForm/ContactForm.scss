@@ -32,8 +32,8 @@
                 input {
                     display: flex;
                     align-items: center;
-                    padding: 8px;
-                    width: 97%;
+                    padding: 15px;
+                    width: 93%;
                     background: rgba($text, 0.1);
                     border-radius: 25px;
                     border: none;
@@ -42,8 +42,11 @@
 
                     @include tablet {
                         font-size: 16px;
-                        padding: 15px;
                         width: 94%;
+                    }
+
+                    @include mobile {
+                        width: 88%;
                     }
                 }
 
@@ -60,7 +63,7 @@
                         width: 100%;
                         display: flex;
                         align-items: center;
-                        padding: 8px;
+                        padding: 15px;
                         background: rgba($text, 0.1);
                         border-radius: 25px;
                         border: none;
@@ -70,15 +73,14 @@
     
                         @include tablet {
                             font-size: 16px;
-                            padding: 15px;
                         }
                     }
 
                     &::after {
                         content: "";
                         position: absolute;
-                        right: 10px;
-                        top: 10px;
+                        right: 16px;
+                        top: 16px;
                         border: solid $text;
                         border-width: 0 2px 2px 0;
                         transform: rotate(45deg);
@@ -99,7 +101,7 @@
                 textarea {
                     display: flex;
                     align-items: center;
-                    padding: 8px;
+                    padding: 15px;
                     height: 100px;
                     background: rgba($text, 0.1);
                     border-radius: 15px;
@@ -110,7 +112,6 @@
 
                     @include tablet {
                         font-size: 16px;
-                        padding: 15px;
                     }
                 }
             }
@@ -127,10 +128,14 @@
                     width: 50%;
 
                     input {
-                        width: 93%;
+                        width: 85%;
 
                         @include tablet {
                             width: 88%;
+                        }
+
+                        @include mobile {
+                            width: 76%;
                         }
                     }
                 }
@@ -149,8 +154,7 @@
             box-shadow: $very-light-box-shadow;
             border: none;
             border-radius: 25px;
-            padding: 10px 15px;
-            margin-left: 30px;
+            padding: 15px;
             width: 25%;
             height: 45px;;
             cursor: pointer;
