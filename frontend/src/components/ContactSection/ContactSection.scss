@@ -13,9 +13,11 @@
         align-items: center;
         padding: 80px 30px  40px 30px;
         border-radius: 10px;
+        max-width: 33%;
 
         @include tablet {
             padding: 50px 30px 40px 30px;
+            max-width: 100%;
         }
     }
     

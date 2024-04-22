@@ -33,7 +33,7 @@
                     display: flex;
                     align-items: center;
                     padding: 8px;
-                    width: 96%;
+                    width: 97%;
                     background: rgba($text, 0.1);
                     border-radius: 25px;
                     border: none;
@@ -77,6 +77,7 @@
                     border: none;
                     outline-color: $primary;
                     font-size: 14px;
+                    max-width: 97%;
 
                     @include tablet {
                         font-size: 16px;
