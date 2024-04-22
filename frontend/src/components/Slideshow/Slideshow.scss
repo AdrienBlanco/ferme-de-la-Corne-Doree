@@ -1,5 +1,6 @@
 @import "../../Utils/keyframes.scss";
 @import "../../Utils/variables.scss";
+@import "../../Utils/mixins.scss";
 
 .SlideCardList {
   position: relative;
@@ -10,11 +11,20 @@
   margin-bottom: 40px;
   background: rgba($accent, 0.3);
 
+  @include mobile {
+    height: 92vh;
+  }
+
   &__click {
     height: 88vh;
     width: 15%;
     z-index: 1;
     transition: background-color 0.5s ease-in;
+    @include mobile {
+      height: 92vh;
+      width: 20%;
+  }
+
     &:hover {
       cursor: pointer;
       background: rgba($accent, 0.5);
@@ -41,6 +51,10 @@
       width: 100%;
       height: 88vh;
       object-fit: cover;
+
+      @include mobile {
+        height: 92vh;
+      }
     }
 
     &--hide {

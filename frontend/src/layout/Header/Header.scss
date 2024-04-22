@@ -11,6 +11,10 @@ header {
     left: 50%;
     transition: all 0.5s ease;
 
+    @include mobile {
+        height: 8vh;
+    }
+
     &.scrolled {
         height: 8vh;
         box-shadow: $very-light-box-shadow;
@@ -27,16 +31,14 @@ nav {
 
     .nav--burger {
         position: absolute;
-        top: 2.8rem;
-        right: 2rem;
+        top: 1rem;
+        right: 1.5rem;
         display: none;
         font-size: 1.5rem;
         cursor: pointer;
 
         @include mobile {
             display: block;
-            top: 2rem;
-            right: 2rem;
         }
     }
 }
@@ -90,6 +92,7 @@ nav {
 
         &--burger {
             display: none;
+
             &.open {
                 @include mobile {
                     display: flex;
@@ -107,6 +110,7 @@ nav {
                 }
             }
         }
+
         li {
             a {
                 text-decoration: none;
@@ -133,5 +137,5 @@ nav {
         }
     }
 
-    
+
 }
