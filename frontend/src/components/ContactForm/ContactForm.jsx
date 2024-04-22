@@ -27,7 +27,7 @@ export default function Form() {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (currentCaptcha && formData.captcha !== currentCaptcha.answer) {
-            setErrorMessage('Captcha incorrect')
+            setErrorMessage('Veuillez saisir une réponse correcte.')
             return;
         }
         setIsSubmitted(true);

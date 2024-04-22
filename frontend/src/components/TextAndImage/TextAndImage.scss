@@ -20,6 +20,10 @@
         align-items: center;
         width: 85vw;
         margin: auto;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__content {
@@ -52,10 +56,13 @@
         object-fit: cover;
         border-radius: 5px;
         box-shadow: $box-shadow;
-        @include mobile {
+
+        @include tablet {
             display: none;
         }
 
-        // tablet width 300px and height 300px
+        @include mobile {
+            display: none;
+        }
     }
 }
