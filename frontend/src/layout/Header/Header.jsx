@@ -8,6 +8,7 @@ import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 export default function Header() {
     const [scrolled, setScrolled] = useState(false);
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const handleScroll = () => {
         const offset = window.scrollY;
@@ -22,8 +23,17 @@ export default function Header() {
         setIsBurgerMenuOpen(!isBurgerMenuOpen);
     }
 
+    const handleResize = () => {
+        setIsMobile(window.innerWidth <= 768);
+    }
+
     useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+        }
     }, []);
 
     const leftNav = [
@@ -64,7 +74,7 @@ export default function Header() {
                         src="./img/logo_de_la_ferme_de_la_corne_doree.jpg"
                         alt="Logo de la Ferme de la Corne Dorée"
                     />
-                    <h1 className="sr-only logo__main-title">Ferme de la Corne Dorée</h1>
+                    <h1 className={`logo__main-title ${isMobile ? '' : 'sr-only'}`}>Ferme de la corne dorée</h1>
                 </div>
                 <ul className="nav__list nav__list--right">
                     {rightNav.map((item, index) => (
@@ -76,7 +86,8 @@ export default function Header() {
                         />
                     ))}
                 </ul>
-                <ul className={`nav__list--burger ${isBurgerMenuOpen ? 'open' : ''}`}>
+                <div className={`nav__list__burger--container ${isBurgerMenuOpen ? 'open' : ''}`}>
+                <ul className='nav__list__burger'>
                     {combinedNav.map((item, index) => (
                         <NavBar
                             key={index}
@@ -86,6 +97,7 @@ export default function Header() {
                         />
                     ))}
                 </ul>
+                </div>
             </nav>
         </header>
     )
