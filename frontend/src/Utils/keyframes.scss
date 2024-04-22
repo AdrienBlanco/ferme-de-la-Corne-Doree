@@ -53,3 +53,21 @@
         transform: scale(1);
     }
 }
+
+@keyframes rotate-chevron {
+  from {
+    transform: rotate(45deg);
+  }
+  to {
+    transform: rotate(225deg);
+  }
+}
+
+@keyframes rotate-chevron-reverse {
+  from {
+    transform: rotate(225deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
