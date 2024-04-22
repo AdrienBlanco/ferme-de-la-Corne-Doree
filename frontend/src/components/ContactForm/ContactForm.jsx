@@ -50,7 +50,7 @@ export default function Form() {
                         name="prenom"
                         value={formData.prenom}
                         handleChange={handleChange}
-                        placeholder='Prénom'
+                        placeholder='Jane'
                         required
                     />
                 </div>
@@ -60,7 +60,7 @@ export default function Form() {
                         name="nom"
                         value={formData.nom}
                         handleChange={handleChange}
-                        placeholder='Nom'
+                        placeholder='Doe'
                         required
                     />
                 </div>
@@ -72,7 +72,7 @@ export default function Form() {
                     name="email"
                     value={formData.email}
                     handleChange={handleChange}
-                    placeholder='Email'
+                    placeholder='exemple@mail.com'
                     required
                 />
             </div>
@@ -82,7 +82,7 @@ export default function Form() {
                     name="objet"
                     value={formData.objet}
                     handleChange={handleChange}
-                    placeholder='Choisir...'
+                    placeholder='Sélectionnez un objet...'
                     required
                     options={['Chèvrerie', 'Centre équestre']}
                 />
@@ -94,7 +94,7 @@ export default function Form() {
                     name="message"
                     value={formData.message}
                     handleChange={handleChange}
-                    placeholder='Message'
+                    placeholder='Veuillez saisir votre message ici...'
                     required
                 />
             </div>
@@ -105,6 +105,7 @@ export default function Form() {
                     id='captcha'
                     value={formData.captcha}
                     handleChange={handleChange}
+                    placeholder='Réponse'
                     required
                 />
             </div>

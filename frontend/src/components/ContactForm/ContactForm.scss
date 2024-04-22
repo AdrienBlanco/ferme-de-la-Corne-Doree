@@ -110,21 +110,24 @@
 
         &__btn {
             display: flex;
-            align-items: center;
+            align-self: center;
             justify-content: center;
-            background: $primary;
+            align-items: center;
+            background-image: linear-gradient(to top, $secondary, $accent);
             color: $text;
             font-weight: 800;
-            box-shadow: $light-box-shadow;
+            font-size: large;
+            box-shadow: $very-light-box-shadow;
             border: none;
             border-radius: 25px;
             padding: 10px 15px;
             margin-left: 30px;
-            width: 20%;
+            width: 25%;
+            height: 45px;;
             cursor: pointer;
             position: relative;
             z-index: 1;
-            transition: all 0.3s ease-in-out 0.1s;
+            transition: all 0.3s ease-in;
 
             @include tablet {
                 font-size: 16px;
@@ -144,12 +147,11 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background: rgba($primary, 0.5);
-                box-shadow: $very-light-box-shadow;
                 border-radius: 25px;
+                box-shadow: $light-box-shadow;
                 opacity: 0;
                 z-index: -1;
-                transition: opacity 0.3s ease-in-out 0.1s;
+                transition: opacity 0.3s ease-in;
             }
         }
 
