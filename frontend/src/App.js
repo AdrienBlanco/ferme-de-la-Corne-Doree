@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import Header from './layout/Header/Header';
@@ -12,6 +12,8 @@ import CentreEquestre from './pages/CentreEquestre/CentreEquestre';
 import Error from './pages/Error/Error';
 
 function App() {
+	const location = useLocation();
+	const validPaths = ['/', '/chevrerie', '/centre-equestre'];
 	const [showScrollToTop, setShowScrollToTop] = useState(false);
 
 	const checkScrollToTop = () => {
@@ -47,8 +49,8 @@ function App() {
 					<Route path="/centre-equestre" element={<CentreEquestre />} />
 					<Route path="*" element={<Error />} />
 				</Routes>
-				<News />
-				<ContactSection />
+				{validPaths.includes(location.pathname) && <News />}
+				{validPaths.includes(location.pathname) && <ContactSection />}
 			</main>
 			<Footer />
 		</div>
