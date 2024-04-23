@@ -94,6 +94,7 @@ export default function Header() {
                             name={item.name}
                             path={item.path}
                             target={item.target}
+                            onClick={handleBurgerMenu}
                         />
                     ))}
                 </ul>
