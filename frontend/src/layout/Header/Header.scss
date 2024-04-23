@@ -76,6 +76,7 @@ nav {
         position: fixed;
         width: 30vw;
         left: 1rem;
+
         @include tablet {
             top: 3.5vh;
         }
@@ -126,10 +127,17 @@ nav {
             text-transform: uppercase;
             font-weight: bold;
 
-            a {
-                color: $text;
-                font-size: 24px;
-                text-decoration: none;
+            li {
+
+                a {
+                    color: $text;
+                    font-size: 24px;
+                    text-decoration: none;
+                }
+
+                .current {
+                    color: $primary;
+                }
             }
 
             &--container {
@@ -165,13 +173,14 @@ nav {
                 }
             }
 
-            .current {
-                color: $primary;
-            }
-
             svg {
                 font-size: clamp(1rem, 1.5vw, 2rem);
             }
         }
+
+        .current {
+            color: $primary;
+        }
     }
+
 }
