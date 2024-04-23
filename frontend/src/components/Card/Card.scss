@@ -19,6 +19,10 @@
         @include tablet {
             height: 35vw;
         }
+
+        @include mobile {
+            height: 50vw;
+        }
     }
 
     figcaption {
@@ -30,6 +34,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @include mobile {
+            font-size: 1.5rem;
+        }
     }
 
     &__description {
@@ -47,6 +54,9 @@
         font-size: 1.5rem;
         font-weight: bold;
         box-sizing: border-box;
+        @include mobile {
+            font-size: 1rem;
+        }
     }
 
     &:hover .card__description {
