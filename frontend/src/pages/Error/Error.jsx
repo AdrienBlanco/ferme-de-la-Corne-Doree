@@ -6,7 +6,7 @@ export default function Error() {
 
     return (
             <section className="error">
-                <h2 className="error__title">404</h2>
+                <img src={process.env.PUBLIC_URL + '/img/404_error.jpg'} alt="404 error" className="error__img"/>
                 <p>Oups cette page n'existe pas</p>
                 <p><Link to="/" className="error__link">Retour à l'accueil</Link></p>
             </section>
