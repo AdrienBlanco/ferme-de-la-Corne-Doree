@@ -12,11 +12,11 @@ header {
     transition: all 0.5s ease;
 
     @include tablet {
-        height: 8vh;
+        height: clamp(50px, 8vh, 150px);
     }
 
     &.scrolled {
-        height: 8vh;
+        height: clamp(50px, 8vh, 150px);
         box-shadow: $very-light-box-shadow;
     }
 }
@@ -52,22 +52,19 @@ nav {
 
 
     &__img {
-        width: 12vw;
-        height: 12vw;
+        width: clamp(100px, 12vw, 200px);
+        width: clamp(100px, 12vw, 200px);
         border-radius: 50%;
         border: 0.8rem solid $background;
         transition: transform 0.5s ease;
         z-index: 2;
 
         @include tablet {
-            width: 15vw;
-            height: 15vw;
+            width: clamp(100px, 16vw, 200px);
+            width: clamp(100px, 16vw, 200px);
         }
 
-        @include mobile {
-            width: 25vw;
-            height: 25vw;
-        }
+
     }
 
     &__main-title {
@@ -76,10 +73,12 @@ nav {
         position: fixed;
         width: 30vw;
         left: 1rem;
-        top: 3vh;
+        @include tablet {
+            top: 3.5vh;
+        }
 
         @include mobile {
-            top: 2.5vh;
+            top: 2vh;
         }
     }
 
@@ -120,7 +119,8 @@ nav {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
+            height: 45%;
+            justify-content: space-between;
             text-transform: uppercase;
             font-weight: bold;
 
