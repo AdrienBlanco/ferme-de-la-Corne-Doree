@@ -70,11 +70,11 @@ export default function Header() {
                 </ul>
                 <div className={`logo ${scrolled ? 'logo--scrolled' : ''}`}>
                     <img
-                        className="logo__img"
+                        className={`logo__img ${isBurgerMenuOpen ? 'logo__img--open' : ''}`}
                         src="./img/logo_de_la_ferme_de_la_corne_doree.jpg"
                         alt="Logo de la Ferme de la Corne Dorée"
                     />
-                    <h1 className={`logo__main-title ${isMobile ? '' : 'sr-only'}`}>Ferme de la corne dorée</h1>
+                    <h1 className={`logo__main-title ${isMobile ? '' : 'sr-only'} ${isBurgerMenuOpen ? 'logo__main-title--open' : ''}`}>Ferme de la corne dorée</h1>
                 </div>
                 <ul className="nav__list nav__list--right">
                     {rightNav.map((item, index) => (
