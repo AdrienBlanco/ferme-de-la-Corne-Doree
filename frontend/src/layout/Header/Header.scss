@@ -71,11 +71,11 @@ nav {
     }
 
     &__main-title {
-        font-size: 1rem;
+        font-size: 16px;
         text-transform: uppercase;
         position: fixed;
         width: 30vw;
-        left: 1rem;
+        left: 16px;
 
         @include tablet {
             top: 3.5vh;
