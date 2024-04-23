@@ -6,7 +6,10 @@
     &__form {
         display: flex;
         flex-direction: column;
-        width: 100%;
+
+        @include mobile {
+            width: 100%;
+        }
 
         &__inputs {
             display: flex;
@@ -21,11 +24,11 @@
 
                 label {
                     text-align: left;
-                    font-size: 14px;
+                    font-size: clamp(12px, 0.875rem, 16px);
                     font-weight: 800;
 
                     @include tablet {
-                        font-size: 16px;
+                        font-size: clamp(14px, 1rem, 18px);
                     }
                 }
 
@@ -33,20 +36,14 @@
                     display: flex;
                     align-items: center;
                     padding: 15px;
-                    width: 93%;
                     background: rgba($text, 0.1);
                     border-radius: 25px;
                     border: none;
                     outline-color: $primary;
-                    font-size: 14px;
+                    font-size: clamp(12px, 0.875rem, 16px);
 
                     @include tablet {
-                        font-size: 16px;
-                        width: 94%;
-                    }
-
-                    @include mobile {
-                        width: 88%;
+                        font-size: clamp(14px, 1rem, 18px);
                     }
                 }
 
@@ -68,11 +65,11 @@
                         border-radius: 25px;
                         border: none;
                         outline-color: $primary;
-                        font-size: 14px;
+                        font-size: clamp(12px, 0.875rem, 16px);
                         cursor: pointer;
     
                         @include tablet {
-                            font-size: 16px;
+                            font-size: clamp(14px, 1rem, 18px);
                         }
                     }
 
@@ -102,16 +99,15 @@
                     display: flex;
                     align-items: center;
                     padding: 15px;
-                    height: 100px;
+                    height: clamp(95px, 6.25rem, 105px);
                     background: rgba($text, 0.1);
                     border-radius: 15px;
                     border: none;
                     outline-color: $primary;
-                    font-size: 14px;
-                    max-width: 97%;
+                    font-size: clamp(12px, 0.875rem, 16px);
 
                     @include tablet {
-                        font-size: 16px;
+                        font-size: clamp(14px, 1rem, 18px);
                     }
                 }
             }
@@ -121,26 +117,17 @@
                 flex-direction: row;
                 gap: 20px;
 
+                @include mobile {
+                    flex-direction: column;
+                }
+
                 div {
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-                    width: 50%;
-
-                    input {
-                        width: 85%;
-
-                        @include tablet {
-                            width: 88%;
-                        }
-
-                        @include mobile {
-                            width: 76%;
-                        }
                     }
                 }
             }
-        }
 
         &__btn {
             display: flex;
@@ -150,20 +137,19 @@
             background-image: linear-gradient(to top, $secondary, $accent);
             color: $text;
             font-weight: 800;
-            font-size: large;
+            font-size: clamp(12px, 0.875rem, 16px);
             box-shadow: $very-light-box-shadow;
             border: none;
             border-radius: 25px;
             padding: 15px;
             width: 25%;
-            height: 45px;;
             cursor: pointer;
             position: relative;
             z-index: 1;
             transition: all 0.3s ease-in;
 
             @include tablet {
-                font-size: 16px;
+                font-size: clamp(14px, 1rem, 18px);
             }
 
             &:hover {
@@ -192,15 +178,20 @@
             animation: clicked 0.5s forwards;
         }
 
-        .confirm {
-            margin: 0 0 20px 30px;
+        .message {
+            text-align: center;
+            font-size: clamp(14px, 1rem, 18px);
+            margin: 0 0 20px 0;
+            min-height: 20px;
+        }
+
+        .confirmMessage {
             animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 4s forwards;
         }
 
-        .error {
+        .errorMessage {
             color: red;
-            font-size: 14px;
-            margin: 0 0 20px 30px;
+            animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 4s forwards;
         }
     }
 }

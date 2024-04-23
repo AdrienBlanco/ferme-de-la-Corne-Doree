@@ -28,6 +28,9 @@ export default function Form() {
         e.preventDefault();
         if (currentCaptcha && formData.captcha !== currentCaptcha.answer) {
             setErrorMessage('Veuillez saisir une réponse correcte.')
+            setTimeout(() => {
+                setErrorMessage('');
+            }, 5000);
             return;
         }
         setIsSubmitted(true);
@@ -109,9 +112,10 @@ export default function Form() {
                     required
                 />
             </div>
-        </div>
-        {errorMessage && <p className="error">{errorMessage}</p>}
-        {isSubmitted && <p className='confirm'>Merci pour votre message !</p>}
+          </div>
+          <div className={`message ${errorMessage ? 'errorMessage' : ''} ${isSubmitted ? 'confirmMessage' : ''}`}>
+              {errorMessage || (isSubmitted && 'Merci pour votre message !')}
+          </div>
         <button type="submit" className={`contact__form__btn ${clicked ? 'clicked' : ''}`} onClick={() => setClicked(true)} onAnimationEnd={() => setClicked(false)}>Envoyer</button>
     </form>
   )
