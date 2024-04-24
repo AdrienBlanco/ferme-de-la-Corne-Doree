@@ -20,10 +20,11 @@
     width: 15%;
     z-index: 1;
     transition: background-color 0.5s ease-in;
+    
     @include tablet {
       height: 92vh;
       width: 20%;
-  }
+    }
 
     &:hover {
       cursor: pointer;
