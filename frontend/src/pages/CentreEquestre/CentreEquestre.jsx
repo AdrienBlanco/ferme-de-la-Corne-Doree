@@ -1,6 +1,5 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
-import "./CentreEquestre.scss";
 import centreEquestreSlideshow from "../../datas/slideshow.json";
 
 export default function CentreEquestre() {

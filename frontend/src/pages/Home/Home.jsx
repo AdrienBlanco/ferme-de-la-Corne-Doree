@@ -1,7 +1,6 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import ImageLinks from "../../components/ImagesLinks/ImageLinks";
-import "./Home.scss"
 import homeSlideshow from "../../datas/slideshow.json";
 
 export default function Home() {
