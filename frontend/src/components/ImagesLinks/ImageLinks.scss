@@ -1,4 +1,5 @@
 @import "../../Utils/variables.scss";
+@import "../../Utils/mixins.scss";
 
 .imagelinks {
     display: flex;
@@ -18,17 +19,16 @@
         display: flex;
         height: 350px;
         transition: transform 0.2s ease-in-out;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
 
         &:hover {
             transform: scale(1.1);
         }
-
-        box-shadow: $box-shadow;
-        border-radius: 10px;
     }
 
     &__title {
-        font-size: 24px;
+        font-size: clamp(20px, 1.5rem, 28px);
         color: rgba($text, 0.9);
         position: absolute;
         top: 25px;
