@@ -93,20 +93,16 @@
             background-image: linear-gradient(to top, $secondary, $accent);
             color: $text;
             font-weight: 800;
-            font-size: clamp(12px, 0.875rem, 16px);
+            font-size: clamp(14px, 1rem, 18px);
             box-shadow: $very-light-box-shadow;
             border: none;
             border-radius: 25px;
             padding: 15px;
-            width: 25%;
+            width: 30%;
             cursor: pointer;
             position: relative;
             z-index: 1;
             transition: all 0.3s ease-in;
-
-            @include tablet {
-                font-size: clamp(14px, 1rem, 18px);
-            }
 
             &:hover {
                 transform: scale(110%);
