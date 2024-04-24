@@ -1,7 +1,6 @@
 import TextAndImage from "../../components/TextAndImage/TextAndImage";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import CheeseGallery from "../../components/CheeseGallery/CheeseGallery";
-import "./Chevrerie.scss"
 import chevrerieSlideshow from "../../datas/slideshow.json";
 
 export default function Chevrerie() {

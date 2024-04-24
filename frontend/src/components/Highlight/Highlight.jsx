@@ -30,9 +30,9 @@ export default function Highlight({ tag: Tag = 'h1', children}) {
     }, []);
 
     return (
-      <>
+    <>
         <Tag ref={titleRef}>{children}</Tag>
         <div ref={highlightRef} className='highlight'></div>
-      </>
+    </>
   )
 }
