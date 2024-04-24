@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from "../ContactForm/ContactForm";
 import Location from "../Location/Location"
+import Highlight from '../Highlight/Highlight';
 import "./ContactSection.scss";
 
 export default function ContactSection() {
@@ -9,7 +10,12 @@ export default function ContactSection() {
     return (
         <section className="ContactSection" id="Contact">
             <div className="ContactSection__form">
-                <h2 className="ContactSection__title">Contact</h2>
+                <div className='title-container'>
+                    <Highlight 
+                    className="ContactSection__title" 
+                    small={true} 
+                    tag="h2">Contact</Highlight>
+                </div>
                 <ContactForm />
             </div>
 

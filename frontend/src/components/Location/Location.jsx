@@ -1,10 +1,15 @@
-/* eslint-disable jsx-a11y/iframe-has-title */
+import Highlight from "../Highlight/Highlight";
 import "./Location.scss";
 
 export default function Location({ infoTitle, info, src, width, height, loadingValue }) {
     return (
         <div className="location" id="location">
-            <h2 className="location__title">Coordonnées</h2>
+            <div className='title-container'>
+                <Highlight
+                    className="location__title"
+                    small={true}
+                    tag="h2">Coordonnées</Highlight>
+            </div>
             <div className="location__map">
                 <iframe src={src} width={width} height={height} loading={loadingValue}></iframe>
             </div>
@@ -13,7 +18,7 @@ export default function Location({ infoTitle, info, src, width, height, loadingV
                     <p key={index}><span>{title}</span> {info[index]}</p>
                 )}
             </div>
-            
+
         </div>
     )
 }

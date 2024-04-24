@@ -1,38 +1,38 @@
-import React, { useEffect, useRef } from 'react'
-import './Highlight.scss'
+import { useEffect, useRef } from 'react';
+import './Highlight.scss';
 
-export default function Highlight({ tag: Tag = 'h1', children}) {
-    const titleRef = useRef(null);
-    const highlightRef = useRef(null);
+export default function Highlight({ tag: Tag = 'h2', children, className, small }) {
+
+    const elementRef = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-            if (highlightRef.current) {
-                highlightRef.current.style.width = entry.isIntersecting ? '100%' : '30%';
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (elementRef.current) {
+                    const highlightElement = elementRef.current.nextSibling; 
+                    highlightElement.style.width = entry.isIntersecting ? '100%' : '30%';
+                }
+            },
+            {
+                threshold: 0.5,
             }
-        },
-        {
-            threshold: 0.5,
-        }
-    );
+        );
 
-        const currentTitleRef = titleRef.current;
-
-        if (currentTitleRef) {
-            observer.observe(currentTitleRef);
+        if (elementRef.current) {
+            observer.observe(elementRef.current);
         }
 
         return () => {
-            if (currentTitleRef) {
-                observer.unobserve(currentTitleRef);
+            if (elementRef.current) {
+                observer.unobserve(elementRef.current);
             }
         };
     }, []);
 
     return (
-      <>
-        <Tag ref={titleRef}>{children}</Tag>
-        <div ref={highlightRef} className='highlight'></div>
-      </>
-  )
+        <>
+            <Tag ref={elementRef} className={className}>{children}</Tag>
+            <div className={`highlight ${small ? "highlight--small" : ""}`}></div>
+        </>
+    );
 }

@@ -4,7 +4,7 @@
 .ContactSection {
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
 
     @include tablet {
         flex-direction: column;
