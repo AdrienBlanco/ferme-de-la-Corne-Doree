@@ -3,8 +3,8 @@
 
 .ContactSection {
     display: flex;
-    justify-content: center;
-    gap: 5%;
+    justify-content: space-around;
+    padding: 40px 0;
 
     @include tablet {
         flex-direction: column;
@@ -15,13 +15,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 80px 30px  40px 30px;
         border-radius: 10px;
-        max-width: 33%;
+        width: 40vw;
         
         @include tablet {
-            padding: 50px 30px 40px 30px;
-            max-width: 100%;
+            width: 100%;
             order: 2;
         }
 
